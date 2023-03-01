@@ -195,9 +195,48 @@ label span {
 text-align: center;
 }
 
-#under_nav img {
+#under_nav a {
     margin-left: 1em;
     margin-right: 1em;
-    height: 100%;
-    width: 3%;
+    height: 50%;
+
+}
+#image_container{
+    width: 30%; 
+    background:#fff;
+    text-align: center;
+    padding-top: 2em;
+    padding-right: 1em;
+    padding-bottom: 5em;
+    padding-left: 1em;
+    border-radius: 50px;
+}
+#dog_image{
+    width: 80%;
+}
+#dog_name{
+    font-family: Poppins;
+    font-size: 30px;
+    
+}
+#main_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 5em;
+}
+.buttons{
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    height: 30%;
+    background: none;
+}
+.buttons img{
+    width: 100%;
+}
+#like_buttons{
+    display: flex;
+    justify-content: space-evenly;
 }
