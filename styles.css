@@ -11,7 +11,7 @@
 :root {
     --mainpurple: #9796DE;
     --secondcolor: #fff;
-    --secondpurpule: #7C76BD;
+    --secondpurple: #7C76BD;
 }
 
 html {
@@ -68,7 +68,7 @@ main {
     padding-left: 1.5em;
     padding-bottom: 0.5em;
     padding-top: 0.5em;
-    background-color: var(--secondpurpule);
+    background-color: var(--secondpurple);
     border-radius: 63px;
     font-size: 35px;
     font-family: Poppins;
@@ -81,7 +81,7 @@ main {
 #register_btn:hover {
     background-image: url("images/button_background.jpg");
     background: cover no-repeat;
-    color: var(--secondpurpule);
+    color: var(--secondpurple);
     transition: 0.5s;
 }
 
@@ -92,7 +92,7 @@ main {
 #register_form {
     width: 45%;
     height: 80vh;
-    background-color: var(--secondcolor);
+    background-color: var(--mainpurple);
     border-radius: 35px;
     display: none;
 }
@@ -171,7 +171,7 @@ label span {
 #submit_button {
     padding-bottom: 0.5em;
     padding-top: 0.5em;
-    background-color: var(--secondpurpule);
+    background-color: var(--secondpurple);
     border-radius: 63px;
     font-size: 30px;
     font-family: Poppins;
@@ -190,7 +190,7 @@ label span {
 #submit_button:hover {
     background-image: url("images/button_background.jpg");
     background: cover no-repeat;
-    color: var(--secondpurpule);
+    color: var(--secondpurple);
     transition: 0.5s;
 }
 
@@ -266,4 +266,97 @@ label span {
     width: 5em;
     background-color: #fff;
     border-radius: 15px;
+    box-shadow: 0px 0px 4px;
+
+}
+
+#animal_categories {
+    position: absolute;
+    right: 3%;
+    top: 25%;
+
+}
+
+#searchbar {
+    position: absolute;
+    width: 333px;
+    right: 3%;
+    border: 0px;
+    border-radius: 15px;
+    top: 40%;
+    box-shadow: 0px 0px 4px;
+
+}
+
+#searchbar::placeholder {
+    padding-left: 1em;
+
+}
+
+#mood_selector {
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 139px 148px;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    position: absolute;
+    right: 3.75%;
+    top: 45%;
+}
+
+#mood_selector button {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+@media screen and (max-width:1366px) {
+    .main_container {
+        display: grid;
+    }
+
+    #register_form {
+        width: 90%;
+        margin: auto;
+    }
+    .name_container{
+        display: grid;
+    }
+    .contact_container{
+        width: auto;
+    }
+    .gender{
+        width: auto;
+    }
+    .gender select{
+        width: auto;
+    }
+    #submit_button{
+        width: auto;
+    }
+    #image_container{
+        width: 90%;
+        margin: auto;
+    }
+    #main_container{
+        display: grid;
+        text-align: center;
+    }
+    #animal_categories{
+        margin-top: 3em;
+        position: relative;
+        right: auto;
+    }
+    #mood_selector{
+        position: inherit;
+        justify-content: center;
+    }
+    #searchbar{
+        position: relative;
+        margin-top: 2em;
+        text-align: center;
+        width: 80%;
+        right: auto;
+    }
 }

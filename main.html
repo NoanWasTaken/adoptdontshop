@@ -15,7 +15,7 @@
 <body>
     <nav class="navbar" style="background-color: #9796DE; ">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Adopt</a>
+            <a class="navbar-brand" href="main.html">Adopt</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -32,7 +32,7 @@
                             <a class="nav-link active" aria-current="page" href="#">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="chat.html">Discuton</a>
+                            <a class="nav-link active" href="chat.html">Conditions d'adoption</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="#">Parcourir</a>
@@ -42,7 +42,7 @@
                                 aria-expanded="false">Compte</a>
                             <ul class="dropdown-menu" style="background-color: #7C76BD;">
                                 <li><a class="dropdown-item" href="#">Se Connecter</a></li>
-                                <li><a class="dropdown-item" href="#">S'inscrire</a></li>
+                                <li><a class="dropdown-item" href="inscription.html">S'inscrire</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
@@ -80,11 +80,19 @@
 
             <div id="options_selectors">
                 <div id="animal_categories">
-                    <button class="animal_selector_buttons"><img src="images/cat_icon.png" alt="cat icon"></button>
-                    <button class="animal_selector_buttons"><img src="images/dog_icon.png" alt="dog icon"></button>
-                    <button class="animal_selector_buttons"><img src="images/bird_icon.png" alt="bird icon"></button>
-                    <button class="animal_selector_buttons"><img src="images/rabbit_icon.png"
-                            alt="rabbit icon"></button>
+                    <button class="animal_selector_buttons" id="asb1"><img src="images/cat_icon.png" alt="cat icon"></button>
+                    <button class="animal_selector_buttons" id="asb2"><img src="images/dog_icon.png" alt="dog icon"></button>
+                    <button class="animal_selector_buttons" id="asb3"><img src="images/bird_icon.png" alt="bird icon"></button>
+                    <button class="animal_selector_buttons" id="asb4"><img src="images/rabbit_icon.png" alt="rabbit icon"></button>
+                </div>
+                <input type="search" id="searchbar" placeholder="Search...">
+
+                <div id="mood_selector">
+                    <div><button><img src="images/sportive.png" alt="sportive"></button></div>
+                    <div><button><img src="images/sleeping.png" alt="sleepy"></a></div>
+                    <div><button><img src="images/sleeping.png" alt="sleepy"></a></div>
+                    <div><button><img src="images/sportive.png" alt="sportive"></button></div>
+                    
                 </div>
             </div>
         </div>
