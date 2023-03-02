@@ -8,37 +8,43 @@
     src: url(fonts/Poppins-Regular.ttf);
 }
 
+:root {
+    --mainpurple: #9796DE;
+    --secondcolor: #fff;
+    --secondpurpule: #7C76BD;
+}
+
 html {
-    background-color: #9796DE;
+    background-color: var(--mainpurple);
 }
 
 main {
-    background-color: #9796DE;
+    background-color: var(--mainpurple);
 
 }
 
 .navbar-brand {
-    color: white !important;
+    color: var(--secondcolor) !important;
 }
 
 .nav-link {
-    color: white !important;
+    color: var(--secondcolor) !important;
 }
 
 .offcanvas-title {
-    color: white !important;
+    color: var(--secondcolor) !important;
 }
 
 .dropdown-item {
-    color: white !important;
+    color: var(--secondcolor) !important;
 }
 
 .dropdown-item:hover {
-    background-color: #9796DE !important;
+    background-color: var(--mainpurple) !important;
 }
 
 .title_image_container {
-    background-color: #9796DE;
+    background-color: var(--mainpurple);
     font-family: Allerta;
 }
 
@@ -62,7 +68,7 @@ main {
     padding-left: 1.5em;
     padding-bottom: 0.5em;
     padding-top: 0.5em;
-    background-color: #7C76BD;
+    background-color: var(--secondpurpule);
     border-radius: 63px;
     font-size: 35px;
     font-family: Poppins;
@@ -75,7 +81,7 @@ main {
 #register_btn:hover {
     background-image: url("images/button_background.jpg");
     background: cover no-repeat;
-    color: #7C76BD;
+    color: var(--secondpurpule);
     transition: 0.5s;
 }
 
@@ -86,7 +92,7 @@ main {
 #register_form {
     width: 45%;
     height: 80vh;
-    background-color: #fff;
+    background-color: var(--secondcolor);
     border-radius: 35px;
     display: none;
 }
@@ -165,7 +171,7 @@ label span {
 #submit_button {
     padding-bottom: 0.5em;
     padding-top: 0.5em;
-    background-color: #7C76BD;
+    background-color: var(--secondpurpule);
     border-radius: 63px;
     font-size: 30px;
     font-family: Poppins;
@@ -184,7 +190,7 @@ label span {
 #submit_button:hover {
     background-image: url("images/button_background.jpg");
     background: cover no-repeat;
-    color: #7C76BD;
+    color: var(--secondpurpule);
     transition: 0.5s;
 }
 
@@ -192,7 +198,11 @@ label span {
     display: flex;
     width: 100%;
     justify-content: space-between;
-text-align: center;
+    text-align: center;
+}
+
+#under_nav img {
+    width: 60%;
 }
 
 #under_nav a {
@@ -201,9 +211,10 @@ text-align: center;
     height: 50%;
 
 }
-#image_container{
-    width: 30%; 
-    background:#fff;
+
+#image_container {
+    width: 30%;
+    background: var(--secondcolor);
     text-align: center;
     padding-top: 2em;
     padding-right: 1em;
@@ -211,32 +222,48 @@ text-align: center;
     padding-left: 1em;
     border-radius: 50px;
 }
-#dog_image{
+
+#dog_image {
     width: 80%;
 }
-#dog_name{
+
+#dog_name {
     font-family: Poppins;
     font-size: 30px;
-    
+
 }
-#main_container{
+
+#main_container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 1em;
     margin-bottom: 5em;
 }
-.buttons{
+
+.buttons {
     border: none;
     cursor: pointer;
     width: 30%;
     height: 30%;
     background: none;
 }
-.buttons img{
+
+.buttons img {
     width: 100%;
 }
-#like_buttons{
+
+#like_buttons {
     display: flex;
     justify-content: space-evenly;
+}
+
+.animal_selector_buttons {
+    background: none;
+    border: none;
+    margin: 0;
+    height: 5em;
+    width: 5em;
+    background-color: #fff;
+    border-radius: 15px;
 }
