@@ -1,18 +1,12 @@
-body{margin-top:20px;}
-/*************** 1.Variables ***************/
+body {
+    margin-top: 20px;
+}
 
-
-/* ------------------ Color Pallet ------------------ */
-
-
-/*************** 2.Mixins ***************/
-
-
-/************************************************
-    ************************************************
-										Search Box
-	************************************************
-************************************************/
+:root {
+    --mainpurple: #9796DE;
+    --secondcolor: #fff;
+    --secondpurple: #7C76BD;
+}
 
 .chat-search-box {
     -webkit-border-radius: 3px 0 0 0;
@@ -52,12 +46,6 @@ body{margin-top:20px;}
 }
 
 
-/************************************************
-	************************************************
-									Users Container
-	************************************************
-************************************************/
-
 .users-container {
     position: relative;
     padding: 1rem 0;
@@ -68,13 +56,6 @@ body{margin-top:20px;}
     -ms-flex-direction: column;
     flex-direction: column;
 }
-
-
-/************************************************
-	************************************************
-											Users
-	************************************************
-************************************************/
 
 .users {
     padding: 0;
@@ -106,17 +87,15 @@ body{margin-top:20px;}
 
 .users .person.active-user {
     background-color: #ffffff;
-    /* Fallback Color */
     background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f9fb), to(#ffffff));
-    /* Saf4+, Chrome */
     background-image: -webkit-linear-gradient(right, #f7f9fb, #ffffff);
-    /* Chrome 10+, Saf5.1+, iOS 5+ */
+
     background-image: -moz-linear-gradient(right, #f7f9fb, #ffffff);
-    /* FF3.6 */
+
     background-image: -ms-linear-gradient(right, #f7f9fb, #ffffff);
-    /* IE10 */
+
     background-image: -o-linear-gradient(right, #f7f9fb, #ffffff);
-    /* Opera 11.10+ */
+
     background-image: linear-gradient(right, #f7f9fb, #ffffff);
 }
 
@@ -184,20 +163,16 @@ body{margin-top:20px;}
         width: 30px;
         height: 30px;
     }
+
     .users .person p.name-time {
         display: none;
     }
+
     .users .person p.name-time .time {
         display: none;
     }
 }
 
-
-/************************************************
-	************************************************
-									Chat right side
-	************************************************
-************************************************/
 
 .selected-user {
     width: 100%;
@@ -247,7 +222,7 @@ body{margin-top:20px;}
     justify-content: flex-end;
 }
 
-.chat-container li.chat-right > .chat-avatar {
+.chat-container li.chat-right>.chat-avatar {
     margin-left: 20px;
     margin-right: 0;
 }
@@ -280,11 +255,11 @@ body{margin-top:20px;}
     border-color: transparent #ffffff transparent transparent;
 }
 
-.chat-container li.chat-right > .chat-text {
+.chat-container li.chat-right>.chat-text {
     text-align: right;
 }
 
-.chat-container li.chat-right > .chat-text:before {
+.chat-container li.chat-right>.chat-text:before {
     right: -20px;
     border-color: transparent transparent transparent #ffffff;
     left: inherit;
@@ -301,36 +276,42 @@ body{margin-top:20px;}
     margin: 0 0 0 15px;
 }
 
-.chat-container li .chat-hour > span {
+.chat-container li .chat-hour>span {
     font-size: 16px;
     color: #9ec94a;
 }
 
-.chat-container li.chat-right > .chat-hour {
+.chat-container li.chat-right>.chat-hour {
     margin: 0 15px 0 0;
 }
 
 @media (max-width: 767px) {
+
     .chat-container li.chat-left,
     .chat-container li.chat-right {
         flex-direction: column;
         margin-bottom: 30px;
     }
+
     .chat-container li img {
         width: 32px;
         height: 32px;
     }
+
     .chat-container li.chat-left .chat-avatar {
         margin: 0 0 5px 0;
         display: flex;
         align-items: center;
     }
+
     .chat-container li.chat-left .chat-hour {
         justify-content: flex-end;
     }
+
     .chat-container li.chat-left .chat-name {
         margin-left: 5px;
     }
+
     .chat-container li.chat-right .chat-avatar {
         order: -1;
         margin: 0 0 5px 0;
@@ -339,13 +320,16 @@ body{margin-top:20px;}
         justify-content: right;
         flex-direction: row-reverse;
     }
+
     .chat-container li.chat-right .chat-hour {
         justify-content: flex-start;
         order: 2;
     }
+
     .chat-container li.chat-right .chat-name {
         margin-right: 5px;
     }
+
     .chat-container li .chat-text {
         font-size: .8rem;
     }
@@ -366,6 +350,7 @@ ul {
     margin: 0;
     padding: 0;
 }
+
 .card {
     border: 0;
     background: #f4f5fb;
@@ -374,4 +359,24 @@ ul {
     border-radius: 2px;
     margin-bottom: 2rem;
     box-shadow: none;
+}
+.container{
+    padding-top: 2em;
+}
+#under_nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+    background-color: var(--mainpurple);
+}
+
+#under_nav img {
+    width: 60%;
+}
+
+#under_nav a {
+    margin-left: 1em;
+    margin-right: 1em;
+    height: 50%;
 }

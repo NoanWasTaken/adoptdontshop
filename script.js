@@ -5,7 +5,7 @@ var submit_button = document.getElementById("submit_button");
 var form_container_one = document.getElementById("form_container_one");
 var button_container = document.getElementById("button_container");
 
-let dog_id = [["dog1.png", "Noopie"], ["dog2.png", "Max"], ["dog3.png", "Lily"]]
+let dog_id = [["dog1.png", "Noopie"], ["dog2.png", "Max"], ["dog3.png", "Lily"],[ "dog4.png", "Fellipe"],["dog5.png", "Juan"],["dog6.png", "Guez"],["dog7.png", "Mer"],["dog8.png", "Goofy"],["dog9.png", "John F. Kennedy"],["dog10.png", "Le dev"],["dog11.png", "Francesco"],["dog12.png", "Nana la D.A."]]
 
 function registerAnimation() {
     register_form.style.transition = " 1.5s"
@@ -27,7 +27,7 @@ function registerAnimation() {
 
 var dog_image = document.getElementById("dog_image");
 dog_image.onclick = function () {
-    var randint = Math.floor(Math.random() * 3);
+    var randint = Math.floor(Math.random() * 12);
     dog_image.src = "images/" + dog_id[randint][0];
     dog_name.innerHTML = dog_id[randint][1];
 }
@@ -35,7 +35,7 @@ dog_image.onclick = function () {
 var like_btn = document.getElementById("like_button");
 
 like_btn.onclick = function () {
-    var randint = Math.floor(Math.random() * 3);
+    var randint = Math.floor(Math.random() * 12);
     dog_image.src = "images/" + dog_id[randint][0];
     dog_name.innerHTML = dog_id[randint][1];
 }
@@ -43,7 +43,7 @@ like_btn.onclick = function () {
 var dislike_btn = document.getElementById("dislike_button");
 
 dislike_btn.onclick = function () {
-    var randint = Math.floor(Math.random() * 3);
+    var randint = Math.floor(Math.random() * 12);
     dog_image.src = "images/" + dog_id[randint][0];
     dog_name.innerHTML = dog_id[randint][1];
 }

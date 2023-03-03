@@ -304,7 +304,10 @@ label span {
     right: 3.75%;
     top: 45%;
 }
-
+#mood_selector img{
+    box-shadow: 0px 0px 5px;
+    border-radius: 22px;
+}
 #mood_selector button {
     border: none;
     background: none;
